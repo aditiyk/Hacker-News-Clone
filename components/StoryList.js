@@ -7,8 +7,8 @@ const StoryList = ({stories}) => (
         <h2 className="story-title"><a href={story.url}>{story.title}</a></h2>
         <div className="story-details">
             <span>{story.points || 0} points</span>
-            <Link href={`/story?id=${story.id}`}>
-            <a>{story.comments_count || 0} comments</a>
+            <Link href={`/story?objectID=${story.objectID}`}>
+            <a>{story.num_comments || 0} comments</a>
             </Link>
         </div>
     </div>
@@ -38,6 +38,7 @@ const StoryList = ({stories}) => (
     .story-details{
         margin:10px;
         padding: 20px;
+        font-style: italic;
       
     }
     .story-details a{
@@ -45,6 +46,7 @@ const StoryList = ({stories}) => (
         color: #ffe5b4;
         padding: 9px;
         margin: 9px;   
+        font-style: italic;
     }
   
     

@@ -13,6 +13,7 @@ class Index extends React.Component{
         try{
             page = Number(query.page) || 1;
             const response = await fetch(`https://hn.algolia.com/api/v1/search?page=${page}`);
+            //const response = await fetch(`http://hn.algolia.com/api/v1/search?query=.../search?page=${page}`);
             stories = await response.json();
             
         } catch(err){
