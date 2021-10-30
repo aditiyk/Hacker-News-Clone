@@ -16,8 +16,6 @@ The first page of new stories was fetched using the fetch api
 which we can  use on the server by installing the isomorphic-fetch package. 
 
 
-For error handling, a try catch block was used.
-
 We 'try' getting the data from request and if its unsuccessful(ie., there's an error on the server side) we return an error page.
 
 Upon clicking a search result, the user is taken to the post detail screen where the number of comments along with
